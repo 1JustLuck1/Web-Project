@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="brython/brython.js"></script>
+        <script type="text/javascript" src="brython/brython_stdlib.js"></script>
+    </head>
+    <header>
+    <h1> Автомобильные иконы 80-х</h1>
+        <table>
+            <tr>
+                <td><a class= "sections" href="index.html">ГЛАВНАЯ</a></td>
+                <td><a class= "sections" href="comparison.html">СРАВНЕНИЕ</a></td>
+                <td><a class= "sections" href="about.html">ИНФО</a></td>
+            </tr>
+        </table>
+    </header>
+    <body onload="brython();">
+        <script type = "text/python" src="compare_script.py">
+        </script>
+        <table>
+            <tr>
+                <td>
+                    <img class="pics" id = "carpic1" src="pics/comp_script/choose.png" width ="300" alt="no pic :-("></td>
+                <td></td>
+                <td>
+                    <img class="pics" id = "carpic2" src="pics/comp_script/choose.png" width ="300" alt="no pic :-("></td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="compnames" id="name_frst">???</a></td>
+                <td>
+                    <a class="compnames">
+                        <button id="btn-1" > Сравнить </button>
+                    </a>
+                </td>
+                <td>
+                    <a class="compnames" id="name_scnd">???</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="selcar1">
+                    <option selected>Выберите авто</option>
+                    <option value="Lambo">Lamborghini Countach 5000QV</option>
+
+                    <option value="Ferrari">Ferrari Testarossa</option>
+
+                    <option value="Porsche">Porsche 930</option>
+
+                    <option value="Nissan">Nissan GT-R (R32)</option>
+
+                    </select>
+                </td>
+                <td></td>
+                <td>
+                    <select id="selcar2">
+                    <option selected>Выберите авто</option>
+                    <option value="Lambo">Lamborghini Countach 5000QV</option>
+
+                    <option value="Ferrari">Ferrari Testarossa</option>
+
+                    <option value="Porsche">Porsche 930</option>
+
+                    <option value="Nissan">Nissan GT-R (R32)</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a class= "compnames" id="ms1">???</a></td>
+                <td><a class= "compnames">Максимальная скорость</a></td>
+                <td>
+                    <a class= "compnames" id="ms2">???</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <a class= "compnames" id="acc1">???</a></td>
+                <td><a class= "compnames">Разгон 0-100</a></td>
+                <td>
+                    <a class= "compnames" id="acc2">???</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <a class= "compnames" id="hp1">???</a></td>
+                <td><a class= "compnames">Мощность</a></td>
+                <td>
+                    <a class= "compnames" id="hp2">???</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <a class= "compnames" id="w1">???</a></td>
+                <td><a class= "compnames">Масса</a></td>
+                <td>
+                    <a class= "compnames" id="w2">???</a></td>
+            </tr>
+        </table>
+    </body>
+</html>
